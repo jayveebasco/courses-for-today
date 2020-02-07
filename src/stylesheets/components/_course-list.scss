@@ -1,0 +1,73 @@
+.course-list {
+
+  &-item {
+    padding: 15px;
+    margin-bottom: 5px;
+    width: 65%;
+
+    font-size: 18px;
+
+    background-color: $black-200;
+  }
+
+  &-item-title {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  &-item-details {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $green-100;
+  }
+
+  &-item-time {
+    position: relative;
+
+    margin-right: 20px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 4px;
+      right: -11px;
+
+      width: 3px;
+      height: 70%;
+
+      background-color: $green-100;
+    }
+  }
+}
+
+@include respond-to(sm-down) {
+  .course-list {
+
+    &-item {
+      width: auto;
+    }
+
+    &-item {
+      padding: 10px;
+    }
+  }
+}
+
+@include respond-to(sm) {
+  .course-list {
+
+    &-item {
+      font-size: 18px;
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .course-list {
+
+    &-item {
+      font-size: 15px;
+    }
+  }
+}

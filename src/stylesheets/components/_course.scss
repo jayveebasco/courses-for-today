@@ -1,0 +1,80 @@
+.course {
+
+  &-wrapper {
+    padding: 5% 0 2%;
+    margin: 0 auto;
+    max-width: 900px;
+  }
+
+  &-tab-holder {
+    display: flex;
+    align-items: center;
+  }
+
+  &-tab-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    width: 50%;
+    max-width: 100%;
+    
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+
+    background-color: $black-300;
+    border: none;
+
+    cursor: pointer;
+    transition: .3s ease-in-out;
+
+    &.active-tab {
+      background-color: $orange-100;
+    }
+
+    @include on-event {
+      background-color: #cc812f;
+
+      outline: unset;
+    }
+  }
+
+  &-list {
+    margin: 12px;
+  }
+}
+
+@include respond-to(sm-down) {
+  .course {
+
+    &-wrapper {
+      padding-top: 0;
+    }
+  }
+}
+
+@include respond-to(sm) {
+  .course {
+
+    &-tab-title {
+      padding: 20px;
+
+      font-size: 17px;
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .course {
+
+    &-tab-title {
+      padding: 10px;
+      height: 55px;
+
+      font-size: 15px;
+    }
+  }
+}

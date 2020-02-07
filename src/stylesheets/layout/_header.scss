@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 43px;
+
+  &-title {
+    font-size: 65px;
+    color: $white;
+
+    &:after {
+      content: "";
+
+      display: block;
+      padding-top: 15px;
+      width: 24%;
+
+      border-bottom: 4px solid $brand-color;
+    }
+  }
+
+  &-subtitle {
+    padding-left: 10px;
+
+    color: $brand-color;
+  }
+
+  &-search-wrapper {
+    margin-top: 40px;
+
+    .search-icon {
+      vertical-align: middle;
+      padding-left: 20px;
+      width: 40px;
+    }
+  }
+
+  .search-input {
+    font-size: 24px;
+    color: $white;
+    text-align: right;
+
+    border: none;
+
+    background: none;
+  }
+
+}

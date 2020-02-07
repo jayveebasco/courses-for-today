@@ -1,0 +1,89 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+.home {
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    .card-list-container {
+      .card-item {
+        width: 43%;
+      }
+    }
+  }
+
+  @include respond-to(md-down) {
+    .header {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+
+      &-search-wrapper {
+        margin-top: 20px;
+
+        .search-icon {
+          vertical-align: middle;
+          padding: 0;
+        }
+
+        .search-input {
+          text-align: left;
+        }
+      }
+    }
+
+
+    .search-input {
+      text-align: left;
+    }
+
+    .card-list-container {
+      .card-item {
+        width: 100%;
+      }
+    }
+  }
+
+  @include respond-to(sm-down) {
+    .header {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      padding-left: 8px;
+
+      &-title {
+        font-size: 35px;
+
+        &:after {
+          width: 40%;
+
+          border-bottom: 2px solid $brand-color;
+        }
+      }
+
+      &-search-wrapper {
+        margin-top: 20px;
+        width: 100%;
+
+        .search-icon {
+          vertical-align: middle;
+          padding-left: 0;
+          width: 30px;
+        }
+      }
+
+      .search-input {
+        font-size: 16px;
+        text-align: left;
+      }
+    }
+
+    .card-list-container {
+      margin: 30px auto;
+      .card-item        {
+        width: 100%;
+
+        font-size: 16px;
+      }
+    }
+  }
+}

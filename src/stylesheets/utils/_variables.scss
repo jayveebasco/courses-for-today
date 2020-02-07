@@ -1,0 +1,60 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular font family
+$font-neutrif-pro: 'Neutrif Pro';
+$font-avenir-light: 'Avenir Light';
+$font-avenir-light-oblique: 'Avenir Light Oblique';
+$font-avenir-medium: 'Avenir Medium';
+$font-avenir-medium-oblique: 'Avenir Medium Oblique';
+$font-avenir-heavy: 'Avenir Heavy';
+$font-avenir-book: 'Avenir Book';
+$font-avenir-book-oblique: 'Avenir Book Oblique';
+$font-oswald: 'Oswald', sans-serif;
+
+/// @type List
+$text-font-stack: $font-oswald, 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+
+/// Copy text color
+/// @type Color
+$text-color: #222 !default;
+
+/// Main brand color
+/// @type Color
+$brand-color: #00867d !default;
+
+/// Light grey
+/// @type Color
+$light-grey: #ededed !default;
+
+/// Medium grey
+/// @type Color
+$mid-grey: #999 !default;
+
+/// Dark grey
+/// @type Color
+$dark-grey: #444 !default;
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '../assets/' !default;
+
+$white: #fff;
+$black: #000;
+
+$black-100: #0b0b0b;
+$black-200: #1c1c1c;
+$black-300: #232323;
+
+$orange-100: #ee8f27;
+
+$green-100: #05786f;

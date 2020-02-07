@@ -1,0 +1,145 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Basic styles for links
+ */
+
+a {
+  color: $brand-color;
+  text-decoration: none;
+
+  @include on-event {
+    color: $text-color;
+  }
+}
+
+.btn, a {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+
+
+  @include on-event {
+    outline: 0;
+
+    @include boxshadow(none);
+  }
+}
+
+/**
+ * Basic styles for input fields
+ */
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  outline: none;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-focus-ring-color: none;
+
+  @include on-event {
+    @include boxshadow(none);
+  }
+}
+
+//styles for navbar-toggler
+.navbar-toggler {
+  padding: 10px 0;
+
+  border: 0;
+  border-radius: 0;
+
+  .icon-bar {
+    display: block;
+    width: 29px;
+    height: 4px;
+
+    background: #000;
+
+    & + .icon-bar {
+      margin-top: 4px;
+    }
+
+    @include transition(.5s cubic-bezier(.65, .05, .36, 1));
+
+    @include boxshadow(none);
+
+  }
+
+  &[aria-expanded="true"] {
+    .icon-bar {
+      &:first-child {
+        @include transform(rotate(225deg) translate(-6px, -5px));
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:last-child {
+        @include transform(rotate(-225deg) translate(-6px, 6px));
+      }
+    }
+  }
+
+  @include on-event() {
+    outline: 0;
+  }
+}
+
+//remove all margins for default
+body * {
+  margin: 0;
+}
+
+body {
+  position: relative;
+  
+  margin: 0;
+  min-height: 100vh;
+
+  background-color: $black-100;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1172px;
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .container {
+    max-width: 1155px;
+  }
+}
+
+@include respond-to(lg) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@include respond-to(md) {
+  .container {
+    max-width: 754px;
+  }
+}
+
+@include respond-to(sm) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@include respond-to(xs) {
+  .container {
+    padding: 0;
+    max-width: 100%;
+  }
+}
