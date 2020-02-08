@@ -1,13 +1,27 @@
 .course-list {
 
   &-item {
-    padding: 15px;
+    padding: 13px;
     margin-bottom: 5px;
     width: 65%;
 
     font-size: 18px;
 
     background-color: $black-200;
+    
+    transition: all .3s ease-in-out;
+
+    @include on-event {
+      .course-list-item-details {
+        color: $white;
+      }
+
+      .course-list-item-time {
+        &:after {
+          background-color: $white; 
+        }
+      }
+    }
   }
 
   &-item-title {
@@ -30,8 +44,8 @@
     &:after {
       content: '';
       position: absolute;
-      top: 4px;
-      right: -11px;
+      top: 2.5px;
+      right: -12px;
 
       width: 3px;
       height: 70%;

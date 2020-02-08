@@ -35,9 +35,11 @@
       background-color: $orange-100;
     }
 
-    @include on-event {
-      background-color: #cc812f;
+    &:hover {
+      background-color: $orange-200;
+    }
 
+    &:focus {
       outline: unset;
     }
   }

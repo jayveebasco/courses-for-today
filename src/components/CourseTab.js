@@ -1,6 +1,7 @@
 import React from 'react'
 
-const CourseTab = ({ courseTab, active, clickTab }) => {
+const CourseTab = ({ courseTab, clickTab, active }) => {
+
   return (
     <div className="course-tab-holder">
       {courseTab.map((courseItem, index) => (
@@ -10,7 +11,7 @@ const CourseTab = ({ courseTab, active, clickTab }) => {
         className={`course-tab-title ${parseInt(active) === courseItem.courseId ? 'active-tab' : ''}`} 
         onClick={clickTab}
         >
-          {courseItem.courseTabTitle}
+          {courseItem.courseCategory}
         </button>
       ))}
     </div>
