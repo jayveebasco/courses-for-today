@@ -30,24 +30,26 @@ const CourseList = ({ list, activeList }) => {
     <div className="course-list-wrapper">
       {list.courseId === parseInt(activeList) &&
         list.courseList.map((listItem, index) => (
-          <div 
+          <a 
             key={index} 
-            className="course-list-item" 
-            style={{ 
-              borderLeft: `10px solid ${listItem.courseColor}`,
-              backgroundColor: isHovered.course === listItem.courseTitle && isHovered.active ? isHovered.color : '#1c1c1c'
-            }}
+            href="/"
             onMouseEnter={() => handleMouseEnter(listItem.courseTitle, listItem.courseColor)}
             onMouseLeave={handleMouseLeave}
           >
-            <a href="/">
-              <div className="course-list-item-details">
-                <span className="course-list-item-time">{listItem.courseStartTime} - {listItem.courseEndTime}</span>
-                <span>{listItem.courseRoom}</span>
-              </div>
-              <div className="course-list-item-title">{listItem.courseTitle}</div>
-            </a>
-          </div>
+            <div 
+              className="course-list-item" 
+              style={{ 
+                borderLeft: `10px solid ${listItem.courseColor}`,
+                backgroundColor: isHovered.course === listItem.courseTitle && isHovered.active ? isHovered.color : '#1c1c1c'
+              }}
+            >
+                <div className="course-list-item-details">
+                  <span className="course-list-item-time">{listItem.courseStartTime} - {listItem.courseEndTime}</span>
+                  <span>{listItem.courseRoom}</span>
+                </div>
+                <div className="course-list-item-title">{listItem.courseTitle}</div>
+            </div>
+          </a>
         ))
       }
     </div>

@@ -32,13 +32,6 @@ export const course = [
         courseColor: '#8fc444'
       },
       {
-        courseStartTime: '18:00',
-        courseEndTime: '18:50',
-        courseRoom: 'Course room 5',
-        courseTitle: 'Express JS',
-        courseColor: '#e90d65'
-      },
-      {
         courseStartTime: '19:00',
         courseEndTime: '19:45',
         courseRoom: 'Course room 6',

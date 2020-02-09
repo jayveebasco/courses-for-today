@@ -32,10 +32,11 @@ const Course = () => {
 
       return 0
     }
-
+    
     //Filter and sort courses based on start time
-    filteredTodayCourse.forEach((courseCategory, index) => {
-      let filteredCourse = courseCategory.courseList.filter(courseItem => courseItem.courseStartTime > currentTime)
+    filteredTodayCourse.forEach((courseCateg, index) => {
+      let filteredCourse = courseCateg.courseList.filter(courseItem => courseItem.courseStartTime > currentTime)
+
       filteredCourse.sort(sortCourses)
 
       filteredTodayCourse[index].courseList = filteredCourse
@@ -43,7 +44,8 @@ const Course = () => {
 
     setTodayCourse(filteredTodayCourse)
     
-  })
+  }, [todayCourse])
+
 
   return (
     <div className="course-wrapper">
