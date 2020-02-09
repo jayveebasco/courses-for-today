@@ -44,6 +44,13 @@ export const course = [
         courseRoom: 'Course room 7',
         courseTitle: 'MySQL',
         courseColor: '#3d4241'
+      },
+      {
+        courseStartTime: '21:00',
+        courseEndTime: '21:30',
+        courseRoom: 'Course room 20',
+        courseTitle: 'Next JS',
+        courseColor: '#3d4242'
       }
     ]
   },

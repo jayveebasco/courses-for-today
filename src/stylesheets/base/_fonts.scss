@@ -15,3 +15,10 @@
 @include font-face($font-avenir-heavy, $base-url + 'fonts/', 'avenir-heavy', 'avenir-heavy', 600);
 @include font-face($font-avenir-book, $base-url + 'fonts/', 'avenirltstd-book', 'avenirltstd-book', 700);
 @include font-face($font-avenir-book-oblique, $base-url + 'fonts/', 'avenirltstd-bookoblique', 'avenirltstd-bookoblique', 750);
+
+@include font-face($font-oswald, $base-url + 'fonts/', 'oswald-extralight', 'oswald-extralight', 200);
+@include font-face($font-oswald, $base-url + 'fonts/', 'oswald-light', 'oswald-light', 300);
+@include font-face($font-oswald, $base-url + 'fonts/', 'oswald-regular', 'oswald-regular', 400);
+@include font-face($font-oswald, $base-url + 'fonts/', 'oswald-medium', 'oswald-medium', 500);
+@include font-face($font-oswald, $base-url + 'fonts/', 'oswald-semibold', 'oswald-semibold', 600);
+@include font-face($font-oswald, $base-url + 'fonts/', 'oswald-bold', 'oswald-bold', 700);

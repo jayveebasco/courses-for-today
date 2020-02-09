@@ -47,7 +47,7 @@
     &:after {
       content: '';
       position: absolute;
-      top: 2.5px;
+      top: 5px;
       right: -12px;
 
       width: 3px;
@@ -55,6 +55,12 @@
 
       background-color: $green-100;
     }
+  }
+
+  &-notif {
+    font-size: 22px;
+    font-weight: 500;
+    color: $white;
   }
 }
 
