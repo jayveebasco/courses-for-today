@@ -55,13 +55,15 @@ const Course = () => {
         active={activeTab} 
       />
       <div className="course-list">
-        {todayCourse.map((courseItem, index) => (
-          <CourseList 
-            key={index} 
-            list={courseItem} 
-            activeList={activeTab} 
-          />
-        ))}
+        {todayCourse.map((courseItem, index) => {
+          return courseItem.courseId === parseInt(activeTab) ?
+            <CourseList 
+              key={index} 
+              list={courseItem} 
+              activeList={activeTab} 
+            />
+          : null
+        })}
       </div>
     </div>
   )

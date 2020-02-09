@@ -1,9 +1,12 @@
 .course-list {
 
+  &-holder {
+    width: 65%;
+  }
+
   &-item {
     padding: 13px;
     margin-bottom: 5px;
-    width: 65%;
 
     font-size: 18px;
 
@@ -58,8 +61,8 @@
 @include respond-to(sm-down) {
   .course-list {
 
-    &-item {
-      width: auto;
+    &-holder {
+      width: 100%;
     }
 
     &-item {
