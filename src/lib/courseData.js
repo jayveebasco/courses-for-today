@@ -1,56 +1,63 @@
 export const course = [
   {
     courseId: 1,
-    courseCategory: 'Aktuelles Kursprogram',
+    courseCategory: 'Aktuelles Kursprogramm',
     courseList: [
       {
-        courseStartTime: '21:00',
-        courseEndTime: '21:30',
+        courseStartTime: '16:00',
+        courseEndTime: '16:50',
         courseRoom: 'Course room 1',
-        courseTitle: 'React',
+        courseTitle: 'Workout',
         courseColor: '#0083bd'
       },
       {
-        courseStartTime: '08:00',
-        courseEndTime: '09:30',
+        courseStartTime: '19:00',
+        courseEndTime: '20:00',
         courseRoom: 'Course room 2',
-        courseTitle: 'HTML',
+        courseTitle: 'Cycling Female',
         courseColor: '#940206'
       },
       {
-        courseStartTime: '17:00',
-        courseEndTime: '17:30',
-        courseRoom: 'Course room 3',
-        courseTitle: 'Vue',
+        courseStartTime: '9:00',
+        courseEndTime: '9:50',
+        courseRoom: 'Kursraum 3',
+        courseTitle: 'Rücken-fit (kk)',
         courseColor: '#3952bb'
       },
       {
-        courseStartTime: '10:00',
-        courseEndTime: '10:30',
-        courseRoom: 'Course room 4',
-        courseTitle: 'Angular',
+        courseStartTime: '17:00',
+        courseEndTime: '17:50',
+        courseRoom: 'Kursraum 1',
+        courseTitle: 'Yoga Flow',
         courseColor: '#8fc444'
       },
       {
-        courseStartTime: '19:00',
-        courseEndTime: '19:45',
-        courseRoom: 'Course room 6',
-        courseTitle: 'Node JS',
+        courseStartTime: '15:00',
+        courseEndTime: '16:00',
+        courseRoom: 'Kursraum 1',
+        courseTitle: 'Jumping® Kids',
+        courseColor: '#ea0d66'
+      },
+      {
+        courseStartTime: '12:15',
+        courseEndTime: '13:15',
+        courseRoom: 'Kursraum 3',
+        courseTitle: 'Regression',
         courseColor: '#a752ba'
       },
       {
-        courseStartTime: '18:00',
-        courseEndTime: '18:30',
-        courseRoom: 'Course room 7',
-        courseTitle: 'MySQL',
+        courseStartTime: '19:50',
+        courseEndTime: '20:20',
+        courseRoom: 'Course room 1',
+        courseTitle: 'Deep stretch',
         courseColor: '#3d4241'
       },
       {
-        courseStartTime: '21:00',
-        courseEndTime: '21:30',
-        courseRoom: 'Course room 20',
-        courseTitle: 'Next JS',
-        courseColor: '#3d4242'
+        courseStartTime: '19:00',
+        courseEndTime: '19:50',
+        courseRoom: 'Course room 1',
+        courseTitle: 'Dance & Tone',
+        courseColor: '#3a5a74'
       }
     ]
   },
